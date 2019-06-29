@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Main from './components/Main'
 import FactsList from './components/CatFacts.js'
 import CatFact from './components/Fact.js';
-
+import NotFound from './components/Warn.js'
 
 const AppRouter = () => {
   return (
@@ -12,6 +12,7 @@ const AppRouter = () => {
       <Route path ='/' exact component={Main}/>
       <Route exact path ='/catfacts/' component={FactsList}/>
       <Route exact path ='/fact/' component={CatFact}/>
+      <Route exact path ='/404/' component={NotFound}/>
     </Switch>
     </Router>
   )

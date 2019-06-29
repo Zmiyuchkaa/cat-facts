@@ -26,7 +26,7 @@ render() {
       <div className='facts-block__card'>
       <h3>{fact.text}</h3>
       <h4><img src='../images/positive-vote.png'></img>{fact.upvotes}</h4>
-      <Button size="small" color="primary" component={Link} to={`/catfacts/${fact._id}/`}>
+      <Button size="small" color="primary" component={Link} to={`/fact/${fact._id}/`}>
                   Learn More
                 </Button>
       </div>)}
