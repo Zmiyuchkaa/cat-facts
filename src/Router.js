@@ -11,7 +11,6 @@ const AppRouter = () => {
     <Switch>
       <Route path ='/' exact component={Main}/>
       <Route exact path ='/catfacts/' component={FactsList}/>
-      <Route exact path ='/fact/' component={CatFact}/>
       <Route exact path ='/404/' component={NotFound}/>
     </Switch>
     </Router>
