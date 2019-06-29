@@ -1,0 +1,21 @@
+body {
+  background-color: #e3e7ed;
+  background-image: url('../images/1-122.png');
+}
+
+.header {
+  color: #314f1a;
+}
+
+.facts-block__card {
+  padding: 20px;
+  background: #314f1a;
+  width: 30%;
+  margin: 50px auto;
+  color: white;
+  text-align: left;
+}
+
+.footer{
+  background-color: aqua;
+}
