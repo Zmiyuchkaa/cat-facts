@@ -12,7 +12,7 @@ body {
 
 .header__name {
   padding-top: 1%;
-  font-size: 4em;
+  font-size: 3em;
   margin-top: 0;
 }
 
@@ -26,15 +26,20 @@ body {
   text-transform: uppercase;
 }
 
+.main-text {
+  padding-top: 1em;
+  font-size: 2em;
+}
+
 .facts-block__card {
   padding: 20px;
-  background: #314f1a;
-  width: 30%;
   margin: 50px auto;
   color: white;
   text-align: left;
 }
 
-.footer{
-  background-color: aqua;
+.footer {
+  margin-top: 18%;
+  padding: 1.3em;
+  background-color: white;
 }

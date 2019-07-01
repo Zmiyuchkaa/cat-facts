@@ -1,36 +1,37 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/styles';
 import {Link} from 'react-router-dom';
+import Grid from '@material-ui/core/Grid';
+import Button from '@material-ui/core/Button';
+import Tooltip from '@material-ui/core/Tooltip';
+import ClickAwayListener from '@material-ui/core/ClickAwayListener';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
-  nav_list: {
-    width: 300
+  text: {
+    margin: '2em',
+    fontSize: '25px',
   },
-  warning_window: {
-    margin: '0 auto',
-    marginBottom: 30,
-    width: 500,
-    height: 550,
-  },
-  home_link: {
-    color: 'white',
-  },
-  title: {
-    color: '#f56265',
-    textTransform: 'uppercase',
-    marginTop: 0,
-    fontWeight: 100
-  }
 })
 
 const NotFound = () => {
   const classes = useStyles();
-
   return(
-<div className = {classes.warning_window}>
-<h2 className = {classes.title}>Nothing to do here. <Link to = '/' className = {classes.home_link}><span className = {classes.go_home}>Go to home page</span></Link></h2>
-</div>
-  )
+    <div>
+      <Grid container justify="center">
+        <Grid item>
+          <ClickAwayListener>
+            <div>
+              <Typography className={classes.text}>Ooops, something went wrong</Typography>
+              <Tooltip PopperProps={{disablePortal: true,}} disableFocusListener disableHoverListener disableTouchListener title="Add">
+                <Button color="secondary" size='large' component={Link} to={'/catfacts/'}>BACK TO FACTS</Button>
+              </Tooltip>
+            </div>
+          </ClickAwayListener>
+        </Grid>
+      </Grid>
+    </div>
+  );
 }
 
 export default NotFound;
