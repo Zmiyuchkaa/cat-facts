@@ -63,9 +63,6 @@ const FactsList = () => {
           <Tooltip placement="top-start">
             <Button className={classes.nav} component={Link} to={'/'}>Main</Button>
           </Tooltip>
-          <Tooltip placement="top">
-            <Button className={classes.nav} component={Link} to={'/404/'}>404</Button>
-          </Tooltip>
         </Grid>
       <div className={classes.facts}>{catFacts.slice(0, 21).map(catFact =>
         <div className='facts-block__card'>

@@ -12,7 +12,7 @@ const AppRouter = () => {
       <Route path ='/' exact component={Main}/>
       <Route exact path ='/catfacts/' component={FactsList}/>
       <Route exact path ='/fact/:id' component={CatFact}/>
-      <Route exact path ='/404/' component={NotFound}/>
+      <Route path ='/*/' component={NotFound}/>
     </Switch>
     </Router>
   )

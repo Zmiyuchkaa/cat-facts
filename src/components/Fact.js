@@ -62,9 +62,6 @@ const CatFact = ({match}) => {
           <Tooltip placement="top-start">
             <Button className={classes.nav} component={Link} to={'/'}>Main</Button>
           </Tooltip>
-          <Tooltip placement="top">
-            <Button className={classes.nav} component={Link} to={'/404/'}>404</Button>
-          </Tooltip>
         </Grid>
         <Card className={classes.card}>
         <CardHeader action={<IconButton aria-label="Settings"></IconButton>} title="Cats Facts Base" subheader="a new cat fact every day"/>
